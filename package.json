@@ -1,0 +1,18 @@
+{
+  "name": "weekend-city-explorer",
+  "version": "1.0.0",
+  "description": "周末城市探索指南 - 基于俞军产品方法论与情境感知的极速周末决策工具",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "product-management",
+    "yujun-methodology",
+    "city-explorer",
+    "weekend-trips"
+  ],
+  "author": "PM Team",
+  "license": "MIT"
+}
