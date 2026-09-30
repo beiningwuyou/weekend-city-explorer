@@ -1,0 +1,238 @@
+.explore-page {
+  background: #faf8ff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 28rpx;
+  background: linear-gradient(135deg, #ffc300 0%, #ffeaa7 100%);
+
+  .top-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6rpx;
+  }
+
+  .weather-line {
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #251a00;
+  }
+
+  .user-line {
+    font-size: 22rpx;
+    color: #5a4300;
+  }
+
+  .city-pill {
+    background: #251a00;
+    color: #ffc300;
+    font-size: 22rpx;
+    font-weight: 700;
+    padding: 8rpx 20rpx;
+    border-radius: 9999rpx;
+    flex-shrink: 0;
+  }
+}
+
+.search-card {
+  margin: 20rpx 24rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+  }
+
+  .search-input {
+    flex: 1;
+    background: #f2f3ff;
+    border-radius: 14rpx;
+    padding: 16rpx 20rpx;
+    font-size: 26rpx;
+    color: #131b2e;
+    height: 72rpx;
+  }
+
+  .search-btn {
+    background: #ffc300;
+    color: #251a00;
+    font-size: 26rpx;
+    font-weight: 700;
+    padding: 0 28rpx;
+    height: 72rpx;
+    line-height: 72rpx;
+    border-radius: 14rpx;
+    flex-shrink: 0;
+
+    &.loading {
+      opacity: 0.7;
+    }
+  }
+
+  .reply-box {
+    margin-top: 16rpx;
+    padding: 20rpx;
+    background: #f8f9ff;
+    border-radius: 14rpx;
+    border-left: 6rpx solid #ffc300;
+
+    .reply-content {
+      font-size: 26rpx;
+      color: #131b2e;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .reply-btn-row {
+      display: flex;
+      gap: 16rpx;
+      margin-top: 16rpx;
+    }
+
+    .reply-action-btn {
+      padding: 12rpx 24rpx;
+      border-radius: 12rpx;
+      font-size: 24rpx;
+      font-weight: 700;
+
+      &.primary {
+        background: #ffc300;
+        color: #251a00;
+      }
+
+      &.secondary {
+        background: #eaedff;
+        color: #4f4632;
+      }
+    }
+  }
+}
+
+.tab-strip {
+  display: flex;
+  margin: 0 24rpx;
+  border-bottom: 2rpx solid #eaedff;
+
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    padding: 18rpx 0;
+    font-size: 28rpx;
+    color: #81765f;
+    position: relative;
+
+    &.active {
+      color: #131b2e;
+      font-weight: 800;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2rpx;
+        left: 30%;
+        right: 30%;
+        height: 6rpx;
+        background: #ffc300;
+        border-radius: 3rpx;
+      }
+    }
+  }
+}
+
+.plan-list {
+  padding: 20rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
+
+  .card-thumb-wrap {
+    position: relative;
+    width: 100%;
+    height: 300rpx;
+
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .thumb-badge {
+      position: absolute;
+      top: 16rpx;
+      right: 16rpx;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      font-size: 22rpx;
+      padding: 6rpx 16rpx;
+      border-radius: 9999rpx;
+    }
+  }
+
+  .card-content {
+    padding: 20rpx 24rpx;
+
+    .plan-type {
+      font-size: 22rpx;
+      color: #a33e00;
+      font-weight: 600;
+    }
+
+    .plan-name {
+      display: block;
+      font-size: 30rpx;
+      font-weight: 700;
+      color: #131b2e;
+      margin-top: 6rpx;
+      line-height: 1.4;
+    }
+
+    .plan-footer {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: 16rpx;
+
+      .price-group {
+        display: flex;
+        align-items: baseline;
+        gap: 4rpx;
+      }
+
+      .price-val {
+        font-size: 40rpx;
+        font-weight: 900;
+        color: #a33e00;
+      }
+
+      .price-unit {
+        font-size: 22rpx;
+        color: #81765f;
+      }
+
+      .discount-tag {
+        background: #c8f7e4;
+        color: #006c49;
+        font-size: 22rpx;
+        font-weight: 700;
+        padding: 6rpx 16rpx;
+        border-radius: 8rpx;
+      }
+    }
+  }
+}

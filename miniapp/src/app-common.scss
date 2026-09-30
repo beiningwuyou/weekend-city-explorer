@@ -1,0 +1,134 @@
+/* 小程序端通用样式 - 供所有页面 import */
+
+/* 通用 section-card */
+.section-card {
+  margin: 24rpx 24rpx 0;
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 28rpx 24rpx;
+  box-shadow: 0 2rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.section-title {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #131b2e;
+  margin-bottom: 20rpx;
+}
+
+/* Bottom CTA bar */
+.bottom-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 20rpx 32rpx;
+  box-shadow: 0 -4rpx 24rpx rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20rpx;
+  z-index: 100;
+}
+
+.cta-btn {
+  flex: 1;
+  background: #ffc300;
+  color: #251a00;
+  font-size: 30rpx;
+  font-weight: 700;
+  text-align: center;
+  padding: 24rpx 0;
+  border-radius: 20rpx;
+
+  &.disabled {
+    background: #d3c5ab;
+    color: #81765f;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: #ffc300;
+  color: #251a00;
+  font-size: 28rpx;
+  font-weight: 700;
+  text-align: center;
+  padding: 24rpx 0;
+  border-radius: 16rpx;
+
+  &.full-width {
+    display: block;
+    width: 100%;
+    margin-top: 20rpx;
+  }
+}
+
+.btn-secondary {
+  background: #eaedff;
+  color: #4f4632;
+  font-size: 28rpx;
+  font-weight: 600;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 16rpx;
+}
+
+.btn-row {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 16rpx;
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 20rpx 0;
+  }
+}
+
+/* Toggle list */
+.toggle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eaedff;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .toggle-text {
+    flex: 1;
+    margin-right: 24rpx;
+  }
+
+  .toggle-title {
+    display: block;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #131b2e;
+  }
+
+  .toggle-sub {
+    display: block;
+    font-size: 22rpx;
+    color: #81765f;
+    margin-top: 6rpx;
+    line-height: 1.5;
+  }
+}

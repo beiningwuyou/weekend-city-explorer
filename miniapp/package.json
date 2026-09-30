@@ -1,0 +1,42 @@
+{
+  "name": "weekend-city-explorer-miniapp",
+  "version": "1.0.0",
+  "description": "周末城市探索指南 · 微信小程序端（Taro + React + TypeScript）",
+  "private": true,
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build:h5": "taro build --type h5",
+    "dev:h5": "npm run build:h5 -- --watch"
+  },
+  "browserslist": [
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Opera versions",
+    "last 3 UC versions",
+    "last 3 QQ versions",
+    "last 3 Safari versions",
+    "iOS >= 10",
+    "Android >= 5"
+  ],
+  "dependencies": {
+    "@tarojs/components": "4.x",
+    "@tarojs/react": "4.x",
+    "@tarojs/runtime": "4.x",
+    "@tarojs/taro": "4.x",
+    "@tarojs/plugin-framework-react": "4.x",
+    "@nutui/nutui-taro": "^4.3.12",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@tarojs/cli": "4.x",
+    "@tarojs/webpack5-runner": "4.x",
+    "@types/react": "^18.0.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "babel-plugin-import": "^1.13.8"
+  }
+}

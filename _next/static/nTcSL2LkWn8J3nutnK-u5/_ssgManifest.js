@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fitinerary\u002F[id]","\u002Fsquads\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

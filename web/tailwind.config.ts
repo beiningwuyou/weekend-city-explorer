@@ -1,0 +1,135 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        surface: '#faf8ff',
+        'surface-dim': '#d2d9f4',
+        'surface-bright': '#faf8ff',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f2f3ff',
+        'surface-container': '#eaedff',
+        'surface-container-high': '#e2e7ff',
+        'surface-container-highest': '#dae2fd',
+        'surface-variant': '#dae2fd',
+        'surface-tint': '#785a00',
+        'on-surface': '#131b2e',
+        'on-surface-variant': '#4f4632',
+        'inverse-surface': '#283044',
+        'inverse-on-surface': '#eef0ff',
+        outline: '#81765f',
+        'outline-variant': '#d3c5ab',
+        background: '#faf8ff',
+        'on-background': '#131b2e',
+
+        // Brand (Meituan Yellow & Earth Accents)
+        primary: '#785a00',
+        'on-primary': '#ffffff',
+        'primary-container': '#ffc300',
+        'on-primary-container': '#6d5200',
+        'inverse-primary': '#f8be00',
+        'primary-fixed': '#ffdf9a',
+        'primary-fixed-dim': '#f8be00',
+        'on-primary-fixed': '#251a00',
+        'on-primary-fixed-variant': '#5a4300',
+
+        // Secondary (Dianping Flame Orange)
+        secondary: '#a33e00',
+        'on-secondary': '#ffffff',
+        'secondary-container': '#fe6500',
+        'on-secondary-container': '#541d00',
+        'secondary-fixed': '#ffdbcd',
+        'secondary-fixed-dim': '#ffb596',
+        'on-secondary-fixed': '#360f00',
+        'on-secondary-fixed-variant': '#7c2e00',
+
+        // Tertiary (Campus Mint Green)
+        tertiary: '#006c49',
+        'on-tertiary': '#ffffff',
+        'tertiary-container': '#55e4a8',
+        'on-tertiary-container': '#006343',
+        'tertiary-fixed': '#6ffbbe',
+        'tertiary-fixed-dim': '#4edea3',
+        'on-tertiary-fixed': '#002113',
+        'on-tertiary-fixed-variant': '#005236',
+
+        // Error
+        error: '#ba1a1a',
+        'on-error': '#ffffff',
+        'error-container': '#ffdad6',
+        'on-error-container': '#93000a',
+
+        // Sky & Blue Status
+        sky: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          500: '#0ea5e9',
+          600: '#0284c7',
+        },
+      },
+      borderRadius: {
+        DEFAULT: '0.25rem',
+        sm: '0.25rem',
+        md: '0.5rem',
+        lg: '0.5rem',
+        xl: '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+        full: '9999px',
+      },
+      spacing: {
+        margin: '1.5rem',
+        'margin-xl': '2rem',
+        gutter: '1rem',
+        'gutter-lg': '1.5rem',
+        'space-xs': '0.25rem',
+        'space-sm': '0.5rem',
+        'space-md': '1rem',
+        'space-lg': '1.5rem',
+        'space-xl': '2rem',
+      },
+      fontFamily: {
+        'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body-md': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline-md': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'display-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label-md': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body-sm': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label-sm': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'label-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline-xl': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }],
+        'headline-lg': ['20px', { lineHeight: '28px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+        'headline-md': ['16px', { lineHeight: '24px', fontWeight: '600' }],
+        'display-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }],
+        'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }],
+        'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }],
+        'label-sm': ['11px', { lineHeight: '14px', fontWeight: '700' }],
+        'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }],
+        'headline-xl': ['24px', { lineHeight: '32px', fontWeight: '700' }],
+      },
+      boxShadow: {
+        xs: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        'card-ambient': '0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02)',
+        'card-hover': '0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04)',
+        floating: '0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04)',
+        'brand-glow': '0 0 0 3px rgba(255, 195, 0, 0.28)',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;

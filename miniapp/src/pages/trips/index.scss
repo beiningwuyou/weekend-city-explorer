@@ -1,0 +1,162 @@
+.trips-page {
+  background: #faf8ff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.trips-header {
+  padding: 32rpx 28rpx 20rpx;
+
+  .trips-title {
+    display: block;
+    font-size: 38rpx;
+    font-weight: 900;
+    color: #131b2e;
+  }
+
+  .trips-sub {
+    display: block;
+    font-size: 24rpx;
+    color: #81765f;
+    margin-top: 6rpx;
+  }
+}
+
+.stats-row {
+  display: flex;
+  gap: 16rpx;
+  padding: 0 24rpx 16rpx;
+
+  .stat-card {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 16rpx;
+    padding: 20rpx 12rpx;
+    text-align: center;
+    box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+
+    .stat-value {
+      display: block;
+      font-size: 32rpx;
+      font-weight: 900;
+      color: #a33e00;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 20rpx;
+      color: #81765f;
+      margin-top: 4rpx;
+    }
+  }
+}
+
+.trip-list {
+  padding: 8rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.trip-card {
+  background: #ffffff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+
+  .trip-badge {
+    padding: 6rpx 20rpx;
+
+    &.active {
+      background: #c8f7e4;
+
+      .badge-text {
+        color: #006c49;
+      }
+    }
+
+    &.upcoming {
+      background: #fff8e1;
+
+      .badge-text {
+        color: #b78103;
+      }
+    }
+
+    .badge-text {
+      font-size: 20rpx;
+      font-weight: 700;
+    }
+  }
+
+  .trip-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 24rpx;
+
+    .trip-main {
+      flex: 1;
+      min-width: 0;
+
+      .trip-name {
+        display: block;
+        font-size: 28rpx;
+        font-weight: 700;
+        color: #131b2e;
+        line-height: 1.3;
+      }
+
+      .trip-desc {
+        display: block;
+        font-size: 22rpx;
+        color: #81765f;
+        margin-top: 8rpx;
+      }
+    }
+
+    .trip-cost {
+      text-align: right;
+      flex-shrink: 0;
+      margin-left: 20rpx;
+
+      .cost-num {
+        display: block;
+        font-size: 38rpx;
+        font-weight: 900;
+        color: #a33e00;
+      }
+
+      .cost-unit {
+        display: block;
+        font-size: 20rpx;
+        color: #81765f;
+      }
+    }
+  }
+
+  .trip-btns {
+    display: flex;
+    gap: 16rpx;
+    padding: 0 24rpx 20rpx;
+
+    .btn-item {
+      flex: 1;
+      text-align: center;
+      padding: 16rpx 0;
+      border-radius: 12rpx;
+      font-size: 24rpx;
+      font-weight: 700;
+
+      &.primary {
+        background: #ffc300;
+        color: #251a00;
+      }
+
+      &.secondary {
+        background: #f2f3ff;
+        color: #131b2e;
+      }
+    }
+  }
+}

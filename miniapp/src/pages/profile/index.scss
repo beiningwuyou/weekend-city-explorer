@@ -1,0 +1,172 @@
+.profile-page {
+  background: #faf8ff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.user-card {
+  margin: 24rpx;
+  background: linear-gradient(135deg, #131b2e, #283044);
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 16rpx rgba(19, 27, 46, 0.15);
+
+  .user-top {
+    display: flex;
+    align-items: center;
+    gap: 24rpx;
+
+    .avatar-circle {
+      width: 96rpx;
+      height: 96rpx;
+      border-radius: 9999rpx;
+      background: #ffc300;
+      color: #251a00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      .avatar-letter {
+        font-size: 44rpx;
+        font-weight: 900;
+      }
+    }
+
+    .user-meta {
+      flex: 1;
+
+      .user-name {
+        display: block;
+        font-size: 36rpx;
+        font-weight: 900;
+        color: #ffffff;
+      }
+
+      .user-school {
+        display: block;
+        font-size: 24rpx;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 4rpx;
+      }
+
+      .credit-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8rpx;
+        margin-top: 10rpx;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 4rpx 16rpx;
+        border-radius: 9999rpx;
+
+        .credit-star {
+          font-size: 24rpx;
+          font-weight: 900;
+          color: #ffc300;
+        }
+
+        .credit-text {
+          font-size: 20rpx;
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.setting-card {
+  margin: 20rpx 24rpx 0;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+
+  .card-heading {
+    display: block;
+    font-size: 30rpx;
+    font-weight: 700;
+    color: #131b2e;
+    margin-bottom: 20rpx;
+  }
+
+  .budget-row {
+    display: flex;
+    gap: 16rpx;
+
+    .budget-chip {
+      flex: 1;
+      text-align: center;
+      padding: 20rpx 0;
+      background: #f8f9ff;
+      border-radius: 14rpx;
+      font-size: 26rpx;
+      color: #4f4632;
+      font-weight: 600;
+      border: 2rpx solid transparent;
+
+      &.active {
+        background: #fff8e1;
+        border-color: #ffc300;
+        color: #251a00;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18rpx 0;
+    border-bottom: 1rpx solid #f2f3ff;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 4rpx;
+    }
+
+    .toggle-info {
+      flex: 1;
+      margin-right: 20rpx;
+
+      .toggle-name {
+        display: block;
+        font-size: 28rpx;
+        font-weight: 700;
+        color: #131b2e;
+      }
+
+      .toggle-hint {
+        display: block;
+        font-size: 22rpx;
+        color: #81765f;
+        margin-top: 4rpx;
+      }
+    }
+  }
+}
+
+.bottom-space {
+  height: 160rpx;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 16rpx 28rpx;
+  box-shadow: 0 -4rpx 24rpx rgba(0, 0, 0, 0.08);
+  z-index: 100;
+
+  .save-btn {
+    background: #ffc300;
+    color: #251a00;
+    font-size: 28rpx;
+    font-weight: 800;
+    text-align: center;
+    padding: 22rpx 0;
+    border-radius: 16rpx;
+  }
+}

@@ -1,4 +1,21 @@
+# OS files
 .DS_Store
+Thumbs.db
+*.swp
+
+# Build artifacts and caches
+web/.next/
+web/out/
+*.tsbuildinfo
+miniapp/node_modules/
+miniapp/dist/
 node_modules/
-dist/
-*.log
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+.env*.local

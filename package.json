@@ -1,18 +1,23 @@
 {
   "name": "weekend-city-explorer",
-  "version": "1.0.0",
-  "description": "周末城市探索指南 - 基于俞军产品方法论与情境感知的极速周末决策工具",
+  "version": "2.1.0",
+  "description": "周末城市探索指南 - 美团本地生活周末出游场景调度中枢与高校搭子工作台",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve . -p 3000",
-    "dev": "npx serve . -p 3000"
+    "dev:web": "npm run dev --prefix web",
+    "build:web": "npm run build --prefix web",
+    "export:web": "cd web && NEXT_EXPORT=true npm run build",
+    "deploy:pages": "cd web && NEXT_EXPORT=true npm run build && cd .. && cp -r web/out/* . && touch .nojekyll",
+    "dev:miniapp": "npm run dev:weapp --prefix miniapp",
+    "build:miniapp": "npm run build:weapp --prefix miniapp"
   },
   "keywords": [
     "product-management",
-    "yujun-methodology",
+    "meituan-ecosystem",
     "city-explorer",
-    "weekend-trips"
+    "weekend-trips",
+    "campus-squad"
   ],
-  "author": "PM Team",
+  "author": "beiningwuyou",
   "license": "MIT"
 }

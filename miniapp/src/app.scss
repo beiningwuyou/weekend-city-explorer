@@ -1,0 +1,42 @@
+/* 全局基础样式 */
+page {
+  background-color: #faf8ff;
+  color: #131b2e;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 28rpx;
+  line-height: 1.5;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 颜色变量 */
+:root {
+  --color-primary: #785a00;
+  --color-primary-container: #ffc300;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #251a00;
+  --color-secondary: #a33e00;
+  --color-secondary-container: #fe6500;
+  --color-tertiary: #006c49;
+  --color-tertiary-container: #55e4a8;
+  --color-surface: #faf8ff;
+  --color-surface-container: #eaedff;
+  --color-surface-container-low: #f2f3ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e2e7ff;
+  --color-on-surface: #131b2e;
+  --color-on-surface-variant: #4f4632;
+  --color-outline: #81765f;
+  --color-outline-variant: #d3c5ab;
+  --color-error: #ba1a1a;
+}
+
+/* 安全底部内边距 */
+.safe-area-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}

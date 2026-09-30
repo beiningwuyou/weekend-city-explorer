@@ -1,0 +1,265 @@
+.itinerary-page {
+  background: #faf8ff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.itin-header {
+  background: linear-gradient(135deg, #ffc300, #ffeaa7);
+  padding: 32rpx 28rpx;
+
+  .itin-header-top {
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+    margin-bottom: 8rpx;
+
+    .itin-status-badge {
+      background: #006c49;
+      color: #ffffff;
+      font-size: 20rpx;
+      font-weight: 700;
+      padding: 4rpx 16rpx;
+      border-radius: 9999rpx;
+    }
+
+    .itin-date {
+      font-size: 22rpx;
+      color: #5a4300;
+    }
+  }
+
+  .itin-title {
+    display: block;
+    font-size: 36rpx;
+    font-weight: 900;
+    color: #251a00;
+    line-height: 1.3;
+  }
+
+  .itin-squad {
+    display: block;
+    font-size: 22rpx;
+    color: #5a4300;
+    margin-top: 6rpx;
+  }
+}
+
+.sentinel-alert {
+  margin: 20rpx 24rpx 0;
+  background: #e0f7fa;
+  border-radius: 16rpx;
+  padding: 20rpx 24rpx;
+  display: flex;
+  align-items: flex-start;
+  gap: 16rpx;
+
+  .sentinel-icon {
+    font-size: 32rpx;
+    flex-shrink: 0;
+  }
+
+  .sentinel-text {
+    flex: 1;
+
+    .sentinel-title {
+      display: block;
+      font-size: 26rpx;
+      font-weight: 700;
+      color: #00838f;
+    }
+
+    .sentinel-sub {
+      display: block;
+      font-size: 22rpx;
+      color: #4f4632;
+      margin-top: 4rpx;
+    }
+  }
+
+  .sentinel-dismiss {
+    font-size: 36rpx;
+    color: #81765f;
+    padding: 0 8rpx;
+    line-height: 1;
+  }
+}
+
+.section-card {
+  margin: 20rpx 24rpx 0;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+
+  .section-title {
+    display: block;
+    font-size: 30rpx;
+    font-weight: 700;
+    color: #131b2e;
+    margin-bottom: 20rpx;
+  }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16rpx;
+
+  &.done .tl-dot {
+    background: #006c49;
+  }
+
+  &.active .tl-dot {
+    background: #ffc300;
+    box-shadow: 0 0 0 6rpx rgba(255, 195, 0, 0.25);
+  }
+
+  &.pending .tl-dot {
+    background: #d3c5ab;
+  }
+
+  .timeline-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80rpx;
+    flex-shrink: 0;
+
+    .tl-time {
+      font-size: 22rpx;
+      color: #81765f;
+      font-weight: 600;
+    }
+
+    .tl-dot {
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 9999rpx;
+      margin: 8rpx 0;
+      flex-shrink: 0;
+    }
+
+    .tl-line {
+      flex: 1;
+      width: 2rpx;
+      background: #eaedff;
+      min-height: 48rpx;
+    }
+  }
+
+  .timeline-right {
+    flex: 1;
+    padding-bottom: 28rpx;
+
+    .tl-row {
+      display: flex;
+      align-items: center;
+      gap: 10rpx;
+
+      .tl-icon {
+        font-size: 26rpx;
+      }
+
+      .tl-title {
+        font-size: 26rpx;
+        font-weight: 700;
+        color: #131b2e;
+      }
+    }
+
+    .tl-sub {
+      display: block;
+      font-size: 22rpx;
+      color: #81765f;
+      margin-top: 4rpx;
+    }
+  }
+}
+
+.ticket-pass {
+  background: #f8f9ff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  border: 1rpx solid #eaedff;
+
+  .ticket-top {
+    background: #131b2e;
+    color: #ffffff;
+    padding: 20rpx 24rpx;
+
+    .ticket-venue {
+      display: block;
+      font-size: 26rpx;
+      font-weight: 700;
+    }
+
+    .ticket-type {
+      display: block;
+      font-size: 20rpx;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 4rpx;
+    }
+  }
+
+  .ticket-code {
+    padding: 16rpx 24rpx;
+    background: #eaedff;
+
+    .ticket-code-text {
+      font-size: 24rpx;
+      font-family: monospace;
+      color: #785a00;
+      font-weight: 700;
+      letter-spacing: 2rpx;
+    }
+  }
+
+  .ticket-bottom {
+    padding: 16rpx 24rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ticket-price {
+      font-size: 26rpx;
+      font-weight: 700;
+      color: #a33e00;
+    }
+
+    .ticket-status {
+      font-size: 22rpx;
+      color: #006c49;
+      font-weight: 700;
+    }
+  }
+}
+
+.bottom-space {
+  height: 160rpx;
+}
+
+.bottom-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 16rpx 28rpx;
+  box-shadow: 0 -4rpx 24rpx rgba(0, 0, 0, 0.08);
+  z-index: 100;
+
+  .cta-btn {
+    background: #ffc300;
+    color: #251a00;
+    font-size: 28rpx;
+    font-weight: 800;
+    text-align: center;
+    padding: 22rpx 0;
+    border-radius: 16rpx;
+  }
+}
