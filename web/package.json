@@ -7,10 +7,7 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
-    "lint": "next lint",
-    "remotion:preview": "remotion preview src/remotion/index.ts",
-    "remotion:render": "remotion render src/remotion/index.ts MainDemo out/product-demo.mp4",
-    "remotion:still": "remotion still src/remotion/index.ts MainDemo out/thumbnail.jpeg"
+    "lint": "next lint"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.530",

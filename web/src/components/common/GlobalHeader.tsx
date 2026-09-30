@@ -28,11 +28,6 @@ export const GlobalHeader: React.FC = () => {
       path: '/trips',
       match: (p: string) => p.startsWith('/trips') || p.startsWith('/checkin'),
     },
-    {
-      label: '🎬 视频Demo',
-      path: '/demo-video',
-      match: (p: string) => p.startsWith('/demo-video'),
-    },
   ];
 
   return (
